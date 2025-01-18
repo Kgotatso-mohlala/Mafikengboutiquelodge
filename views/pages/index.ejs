@@ -1,53 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include("../partials/_header.ejs") %>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 <!-- Topbar Start -->
 <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-    <div class="row gx-0">
-      <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-        <div class="d-inline-flex align-items-center" style="height: 45px">
-          <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Bronkhorstspruit, Gauteng, South Africa</small>
-          <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>082 958 6463</small>
-          <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@neatbat.co.za</small>
+  <div class="row gx-0">
+    <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+      <div class="d-inline-flex align-items-center" style="height: 45px">
+        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Mafikeng, North West, South Africa</small>
+        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>012 345 6789</small>
+        <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@mafikenglodge.co.za</small>
+      </div>
+    </div>
+    <div class="col-lg-4 text-center text-lg-end">
+      <div class="d-inline-flex align-items-center" style="height: 45px">
+        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-tiktok fw-normal"></i></a>
+        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar & Hero Start -->
+<header class="container-fluid position-relative p-0">
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-navbar">
+      <a href="" class="navbar-brand p-0">
+        <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Mafikeng Boutique Lodge</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="/" class="nav-item nav-link active">Home</a>
+          <a href="/about" class="nav-item nav-link">About</a>
+          <a href="/gallery" class="nav-item nav-link">Gallery</a>
+          <a href="/contact" class="nav-item nav-link">Contact</a>
+          <a href="/bookings" class="nav-item nav-link">Booking</a>
         </div>
       </div>
-      <div class="col-lg-4 text-center text-lg-end">
-        <div class="d-inline-flex align-items-center" style="height: 45px">
-          <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-          <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-          <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-tiktok fw-normal"></i></a>
-          <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <div class="hero-carousel">
+      <div class="hero-item" style="background-image: url('../assets/hero/hero-1.webp');"></div>
+      <div class="hero-item" style="background-image: url('../assets/hero/hero-2.webp');"></div>
+      <div class="hero-item" style="background-image: url('../assets/hero/hero3-.webp');"></div>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="hero-header">
+      <h1>Welcome to Mafikeng Boutique Lodge</h1>
+      <p>Your perfect getaway in the heart of Mafikeng</p>
+      <a href="/bookings" class="btn btn-primary btn-lg">Book Now</a>
+      <a href="/about" class="btn btn-outline-light btn-lg">Learn More</a>
+    </div>
+  </div>
+</header>
+<!-- Navbar & Hero End -->
+<!-- About Section Start -->
+<section id="about" class="container-fluid py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">About Mafikeng Boutique Lodge</h2>
+        <p class="lead">Experience luxury and comfort in the heart of Mafikeng. Our lodge offers a peaceful retreat with world-class service.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="highlight-title">A Unique Stay Awaits You</h3>
+        <p>At Mafikeng Boutique Lodge, we provide a serene environment with modern amenities. Our rooms are designed to offer comfort and relaxation for both business and leisure travelers. Enjoy spacious accommodations, premium services, and personalized attention.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../assets/hero/hero-1.webp" alt="Mafikeng Boutique Lodge" class="img-fluid rounded shadow-lg">
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col-12">
+        <h3 class="highlight-title">Our Features</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-card">
+              <i class="fa fa-bed fa-3x text-primary"></i>
+              <h5>Luxurious Rooms</h5>
+              <p>Our rooms are designed to offer the best comfort and privacy, with modern furnishings and amenities.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <i class="fa fa-spa fa-3x text-primary"></i>
+              <h5>Spa & Wellness</h5>
+              <p>Relax and rejuvenate with our exclusive spa and wellness services designed for ultimate relaxation.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <i class="fa fa-utensils fa-3x text-primary"></i>
+              <h5>Delicious Dining</h5>
+              <p>Our in-house restaurant offers a range of exquisite dishes prepared with fresh, local ingredients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="/bookings" class="btn btn-primary">Book Your Stay</a>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+<!-- Facilities/Services Section Start -->
+<section id="facilities" class="facilities-section py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12 mb-5">
+        <h2 class="section-title">Our Facilities</h2>
+        <p class="section-description">Explore the services and amenities that make our lodge the perfect getaway.</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Facility 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="facility-item">
+          <i class="fa fa-bed facility-icon"></i>
+          <h4 class="facility-title">Comfortable Rooms</h4>
+          <p class="facility-description">Spacious, fully furnished rooms with modern amenities for a comfortable stay.</p>
+        </div>
+      </div>
+      <!-- Facility 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="facility-item">
+          <i class="fa fa-utensils facility-icon"></i>
+          <h4 class="facility-title">Restaurant & Bar</h4>
+          <p class="facility-description">Enjoy delicious meals and drinks at our on-site restaurant and bar.</p>
+        </div>
+      </div>
+      <!-- Facility 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="facility-item">
+          <i class="fa fa-wifi facility-icon"></i>
+          <h4 class="facility-title">Free Wi-Fi</h4>
+          <p class="facility-description">Stay connected with free, high-speed Wi-Fi available throughout the lodge.</p>
         </div>
       </div>
     </div>
   </div>
-  <!-- Topbar End -->
-  
-  <!-- Navbar & Hero Start -->
-  <header class="container-fluid position-relative p-0">
-    <div class="main-menu">
-      <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-navbar">
-        <a href="" class="navbar-brand p-0">
-          <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>NeatBat</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ms-auto py-0">
-            <a href="/" class="nav-item nav-link active">Home</a>
-            <a href="/about" class="nav-item nav-link">About</a>
-            <a href="/gallery" class="nav-item nav-link">Gallery</a>
-            <a href="/contact" class="nav-item nav-link">Contact</a>
-            <a href="/bookings" class="nav-item nav-link">Booking</a>
-          </div>
-        </div>
-      </nav>
-  
-      <!-- Hero Section with Carousel -->
-      <div class="hero-carousel">
-        <div class="hero-item" style="background-image: url('../assets/images/hero1.jpg');"></div>
-        <div class="hero-item" style="background-image: url('../assets/images/hero2.jpg');"></div>
-        <div class="hero-item" style="background-image: url('../assets/images/hero3.jpg');"></div>
+</section>
+<!-- Facilities/Services Section End -->
+<section id="room-gallery" class="room-gallery py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-lg-12">
+        <h2 class="section-title">Our Rooms</h2>
+        <p class="section-description">Explore our rooms and choose the perfect one for your stay.</p>
       </div>
     </div>
-  </header>
-  <!-- Navbar & Hero End -->
-  
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Room 1 -->
+        <div class="swiper-slide room-item">
+          <img src="../assets/hero/hero-1.webp" alt="Deluxe Room" class="room-image">
+          <div class="room-description">
+            <h4>Deluxe Room</h4>
+            <p>Spacious and luxurious with a beautiful view.</p>
+          </div>
+        </div>
+        <!-- Room 2 -->
+        <div class="swiper-slide room-item">
+          <img src="../assets/hero/hero-1.webp" alt="Standard Room" class="room-image">
+          <div class="room-description">
+            <h4>Standard Room</h4>
+            <p>Comfortable and affordable for a relaxing stay.</p>
+          </div>
+        </div>
+        <!-- Room 3 -->
+        <div class="swiper-slide room-item">
+          <img src="../assets/hero/hero-1.webp" alt="Luxury Suite" class="room-image">
+          <div class="room-description">
+            <h4>Luxury Suite</h4>
+            <p>Elegant and spacious for the ultimate experience.</p>
+          </div>
+        </div>
+        <!-- Room 4 -->
+        <div class="swiper-slide room-item">
+          <img src="../assets/hero/hero-1.webp" alt="Family Room" class="room-image">
+          <div class="room-description">
+            <h4>Family Room</h4>
+            <p>Perfect for families with extra space and comfort.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1, // Default 1 image per view
+  spaceBetween: 10, // Space between images
+  loop: true, // Enable looping
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3, // Show 3 images on larger screens
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 2, // Show 2 images on medium screens
+      spaceBetween: 10,
+    }
+  }
+});
+
+</script>
+</body>
+</html>

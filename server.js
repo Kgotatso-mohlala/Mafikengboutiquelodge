@@ -18,11 +18,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Routes
 const indexRoutes = require('./routes/index');
-const adminRoutes = require('./routes/admin');
+
 
 
 app.use('/', indexRoutes);
-app.use('/admin', adminRoutes);
+
 
 
 app.listen(port, () => {
