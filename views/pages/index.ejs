@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -37,7 +38,7 @@
   <div class="main-menu">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-navbar">
       <a href="" class="navbar-brand p-0">
-        <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Mafikeng Boutique Lodge</h1>
+        <h1 class="text-primary m-0">Boutique</h1>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>
@@ -61,12 +62,13 @@
     </div>
 
     <!-- Hero Header -->
-    <div class="hero-header">
-      <h1>Welcome to Mafikeng Boutique Lodge</h1>
-      <p>Your perfect getaway in the heart of Mafikeng</p>
-      <a href="/bookings" class="btn btn-primary btn-lg">Book Now</a>
-      <a href="/about" class="btn btn-outline-light btn-lg">Learn More</a>
-    </div>
+<div class="hero-header">
+  <h1 class="text-white" data-aos="fade-up" data-aos-duration="1000" style="font-family: 'Poppins', sans-serif;">Welcome to Mafikeng Boutique Lodge</h1>
+  <p class="text-white" data-aos="fade-up" data-aos-duration="1500" style="font-family: 'Roboto', sans-serif;">Your perfect getaway in the heart of Mafikeng</p>
+  <a href="/bookings" class="btn btn-primary btn-lg" data-aos="fade-right" data-aos-duration="1200">Book Now</a>
+  <a href="/about" class="btn btn-outline-light btn-lg" data-aos="fade-left" data-aos-duration="1200">Learn More</a>
+</div>
+
   </div>
 </header>
 <!-- Navbar & Hero End -->
@@ -75,40 +77,40 @@
   <div class="container">
     <div class="row text-center mb-5">
       <div class="col-12">
-        <h2 class="section-title">About Mafikeng Boutique Lodge</h2>
-        <p class="lead">Experience luxury and comfort in the heart of Mafikeng. Our lodge offers a peaceful retreat with world-class service.</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">About Mafikeng Boutique Lodge</h2>
+        <p class="lead" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Experience luxury and comfort in the heart of Mafikeng. Our lodge offers a peaceful retreat with world-class service.</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="1200">
         <h3 class="highlight-title">A Unique Stay Awaits You</h3>
         <p>At Mafikeng Boutique Lodge, we provide a serene environment with modern amenities. Our rooms are designed to offer comfort and relaxation for both business and leisure travelers. Enjoy spacious accommodations, premium services, and personalized attention.</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
         <img src="../assets/hero/hero-1.webp" alt="Mafikeng Boutique Lodge" class="img-fluid rounded shadow-lg">
       </div>
     </div>
 
     <div class="row text-center mt-5">
       <div class="col-12">
-        <h3 class="highlight-title">Our Features</h3>
-        <div class="row">
-          <div class="col-md-4">
+        <h3 class="highlight-title" data-aos="fade-up" data-aos-duration="1200">Our Features</h3>
+        <div class="row g-3">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
             <div class="feature-card">
               <i class="fa fa-bed fa-3x text-primary"></i>
               <h5>Luxurious Rooms</h5>
               <p>Our rooms are designed to offer the best comfort and privacy, with modern furnishings and amenities.</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
             <div class="feature-card">
               <i class="fa fa-spa fa-3x text-primary"></i>
               <h5>Spa & Wellness</h5>
               <p>Relax and rejuvenate with our exclusive spa and wellness services designed for ultimate relaxation.</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
             <div class="feature-card">
               <i class="fa fa-utensils fa-3x text-primary"></i>
               <h5>Delicious Dining</h5>
@@ -118,25 +120,22 @@
         </div>
       </div>
     </div>
-
-    <div class="text-center mt-5">
-      <a href="/bookings" class="btn btn-primary">Book Your Stay</a>
-    </div>
   </div>
 </section>
+
 <!-- About Section End -->
 <!-- Facilities/Services Section Start -->
 <section id="facilities" class="facilities-section py-5">
   <div class="container">
     <div class="row text-center">
       <div class="col-lg-12 mb-5">
-        <h2 class="section-title">Our Facilities</h2>
-        <p class="section-description">Explore the services and amenities that make our lodge the perfect getaway.</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">Our Facilities</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="100">Explore the services and amenities that make our lodge the perfect getaway.</p>
       </div>
     </div>
     <div class="row">
       <!-- Facility 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1200">
         <div class="facility-item">
           <i class="fa fa-bed facility-icon"></i>
           <h4 class="facility-title">Comfortable Rooms</h4>
@@ -144,7 +143,7 @@
         </div>
       </div>
       <!-- Facility 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
         <div class="facility-item">
           <i class="fa fa-utensils facility-icon"></i>
           <h4 class="facility-title">Restaurant & Bar</h4>
@@ -152,7 +151,7 @@
         </div>
       </div>
       <!-- Facility 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
         <div class="facility-item">
           <i class="fa fa-wifi facility-icon"></i>
           <h4 class="facility-title">Free Wi-Fi</h4>
@@ -163,15 +162,17 @@
   </div>
 </section>
 <!-- Facilities/Services Section End -->
+ <!-- Room Gallery section Start -->
 <section id="room-gallery" class="room-gallery py-5">
   <div class="container">
     <div class="row text-center mb-5">
       <div class="col-lg-12">
-        <h2 class="section-title">Our Rooms</h2>
-        <p class="section-description">Explore our rooms and choose the perfect one for your stay.</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">Our Rooms</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="100">Explore our rooms and choose the perfect one for your stay.</p>
       </div>
     </div>
-    <div class="swiper-container">
+    <!-- Swiper Container -->
+    <div class="swiper-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
       <div class="swiper-wrapper">
         <!-- Room 1 -->
         <div class="swiper-slide room-item">
@@ -213,15 +214,168 @@
     </div>
   </div>
 </section>
+<!-- Room Gallery section End -->
+<!-- FAQ Section -->
+<section id="faq" class="faq-section py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">Find answers to some of the most common questions about our lodge.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                What are the check-in and check-out times?
+              </button>
+            </h2>
+            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Check-in starts at 3:00 PM, and check-out is at 11:00 AM.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                Is breakfast included in the room rate?
+              </button>
+            </h2>
+            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, a complimentary breakfast is included in your stay.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                Do you offer airport transportation?
+              </button>
+            </h2>
+            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we offer airport transfers for an additional fee. Please let us know in advance.
+              </div>
+            </div>
+          </div>
+          <!-- Add more FAQs as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= Testimonial Section start here ======= -->
+<section class="testimonials-section pb-2">
+  <div class="container px-4 py-5">
+    <h2 class="testimonials-title">
+      What Our <br /><span class="px-4 text-primary">Guests say</span>
+    </h2>
+    <p class="testimonials-subtitle">
+      Real reviews from our satisfied visitors.
+    </p>
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">
+              <img
+                src="assets/images/profile-placeholder.webp"
+                alt="reviewer placeholder image"
+                height="80"
+                width="80"
+              />
+            </div>
+            <p class="testimonial-text">
+              "From the moment we arrived, the staff made us feel like family. The service was impeccable, and the stay was nothing short of fantastic!"
+            </p>
+            <h4 class="testimonial-name">— Sarah LeClerc</h4>
+            <span class="testimonial-role">Vacationer</span>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">
+              <img
+                src="assets/images/profile-placeholder.webp"
+                alt="reviewer placeholder image"
+                height="80"
+                width="80"
+              />
+            </div>
+            <p class="testimonial-text">
+              "We celebrated my anniversary at Golden Fields, and it couldn’t have been a better choice. A truly romantic and special getaway."
+            </p>
+            <h4 class="testimonial-name">— Alan & Rebecca Wells</h4>
+            <span class="testimonial-role">Vacationer</span>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="500">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">
+              <img
+                src="assets/images/profile-placeholder.webp"
+                alt="reviewer placeholder image"
+                height="80"
+                width="80"
+              />
+            </div>
+            <p class="testimonial-text">
+              "Our family getaway was made perfect by the hospitality at Golden Fields. We’ll definitely be back."
+            </p>
+            <h4 class="testimonial-name">— Mike and Maria</h4>
+            <span class="testimonial-role">Vacationer</span>
+          </div>
+        </div>
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="700">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar">
+              <img
+                src="assets/images/profile-placeholder.webp"
+                alt="reviewer placeholder image"
+                height="80"
+                width="80"
+              />
+            </div>
+            <p class="testimonial-text">
+              "The charm of Golden Fields combined with modern amenities made our stay unforgettable. Highly recommend!"
+            </p>
+            <h4 class="testimonial-name">— Lucy Smith</h4>
+            <span class="testimonial-role">Vacationer</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next testimonials-button-next"></div>
+      <div class="swiper-button-prev testimonials-button-prev"></div>
+      <div class="swiper-pagination testimonials-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= TestimonialSection ends here ======= -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-  const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1, // Default 1 image per view
-  spaceBetween: 10, // Space between images
-  loop: true, // Enable looping
+   AOS.init();
+   const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,  // Show 1 slide at a time by default
+  spaceBetween: 15,  // Space between slides
+  loop: true,  // Infinite loop
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    clickable: true,  // Enable pagination clickable
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -229,15 +383,34 @@
   },
   breakpoints: {
     768: {
-      slidesPerView: 3, // Show 3 images on larger screens
-      spaceBetween: 10,
+      slidesPerView: 3,  // Show 3 slides on larger screens
+      spaceBetween: 20,  // Space between slides on larger screens
     },
     576: {
-      slidesPerView: 2, // Show 2 images on medium screens
+      slidesPerView: 2,  // Show 2 slides on medium screens
       spaceBetween: 10,
-    }
-  }
+    },
+  },
+  effect: 'slide',  // Smooth slide transition
 });
+
+const testimonialSwiper = new Swiper(".testimonials-swiper", {
+  slidePerView: 1,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".testimonials-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".testimonials-button-next",
+    prevEl: ".testimonials-button-prev",
+  },
+});
+
 
 </script>
 </body>
