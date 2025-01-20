@@ -58,7 +58,7 @@
     <div class="hero-carousel">
       <div class="hero-item" style="background-image: url('../assets/hero/hero-1.webp');"></div>
       <div class="hero-item" style="background-image: url('../assets/hero/hero-2.webp');"></div>
-      <div class="hero-item" style="background-image: url('../assets/hero/hero3-.webp');"></div>
+      <div class="hero-item" style="background-image: url('../assets/hero/hero-3.webp');"></div>
     </div>
 
     <!-- Hero Header -->
@@ -216,7 +216,7 @@
 </section>
 <!-- Room Gallery section End -->
 <!-- FAQ Section -->
-<section id="faq" class="faq-section py-5">
+<section id="faq" class="faq-section py-5" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
     <div class="row text-center mb-5">
       <div class="col-12">
@@ -274,98 +274,60 @@
 </section>
 
 <!-- ============= Testimonial Section start here ======= -->
-<section class="testimonials-section pb-2">
-  <div class="container px-4 py-5">
-    <h2 class="testimonials-title">
-      What Our <br /><span class="px-4 text-primary">Guests say</span>
-    </h2>
-    <p class="testimonials-subtitle">
-      Real reviews from our satisfied visitors.
-    </p>
-    <div class="swiper testimonials-swiper">
+<section class="testimonial-section py-5" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container text-center">
+    <h2 class="section-title">What Our Guests Say</h2>
+    <p class="section-description">Read some real stories from our happy visitors.</p>
+
+    <!-- Swiper container -->
+    <div class="swiper testimonial-swiper">
       <div class="swiper-wrapper">
         <!-- Testimonial 1 -->
-        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="100">
-          <div class="testimonial-card">
+        <div class="swiper-slide testimonial-item">
+          <div class="testimonial-content">
             <div class="testimonial-avatar">
-              <img
-                src="assets/images/profile-placeholder.webp"
-                alt="reviewer placeholder image"
-                height="80"
-                width="80"
-              />
+              <img src="assets/images/profile-placeholder.webp" alt="Guest" />
             </div>
-            <p class="testimonial-text">
-              "From the moment we arrived, the staff made us feel like family. The service was impeccable, and the stay was nothing short of fantastic!"
-            </p>
-            <h4 class="testimonial-name">— Sarah LeClerc</h4>
-            <span class="testimonial-role">Vacationer</span>
+            <p class="testimonial-quote">"A truly unforgettable experience! The hospitality was out of this world, and we couldn't have asked for a better vacation."</p>
+            <h4 class="testimonial-name">— Sarah L.</h4>
+            <span class="testimonial-role">Explorer</span>
           </div>
         </div>
         <!-- Testimonial 2 -->
-        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="300">
-          <div class="testimonial-card">
+        <div class="swiper-slide testimonial-item">
+          <div class="testimonial-content">
             <div class="testimonial-avatar">
-              <img
-                src="assets/images/profile-placeholder.webp"
-                alt="reviewer placeholder image"
-                height="80"
-                width="80"
-              />
+              <img src="assets/images/profile-placeholder.webp" alt="Guest" />
             </div>
-            <p class="testimonial-text">
-              "We celebrated my anniversary at Golden Fields, and it couldn’t have been a better choice. A truly romantic and special getaway."
-            </p>
-            <h4 class="testimonial-name">— Alan & Rebecca Wells</h4>
-            <span class="testimonial-role">Vacationer</span>
+            <p class="testimonial-quote">"Golden Fields made our anniversary extra special. The setting was perfect for a romantic getaway!"</p>
+            <h4 class="testimonial-name">— Alan & Rebecca</h4>
+            <span class="testimonial-role">Holidaymakers</span>
           </div>
         </div>
         <!-- Testimonial 3 -->
-        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="500">
-          <div class="testimonial-card">
+        <div class="swiper-slide testimonial-item">
+          <div class="testimonial-content">
             <div class="testimonial-avatar">
-              <img
-                src="assets/images/profile-placeholder.webp"
-                alt="reviewer placeholder image"
-                height="80"
-                width="80"
-              />
+              <img src="assets/images/profile-placeholder.webp" alt="Guest" />
             </div>
-            <p class="testimonial-text">
-              "Our family getaway was made perfect by the hospitality at Golden Fields. We’ll definitely be back."
-            </p>
-            <h4 class="testimonial-name">— Mike and Maria</h4>
-            <span class="testimonial-role">Vacationer</span>
-          </div>
-        </div>
-        <!-- Testimonial 4 -->
-        <div class="swiper-slide testimonials-slide" data-aos="fade-up" data-aos-delay="700">
-          <div class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img
-                src="assets/images/profile-placeholder.webp"
-                alt="reviewer placeholder image"
-                height="80"
-                width="80"
-              />
-            </div>
-            <p class="testimonial-text">
-              "The charm of Golden Fields combined with modern amenities made our stay unforgettable. Highly recommend!"
-            </p>
-            <h4 class="testimonial-name">— Lucy Smith</h4>
-            <span class="testimonial-role">Vacationer</span>
+            <p class="testimonial-quote">"This was the best family vacation we’ve had in years! The staff made sure we had everything we needed."</p>
+            <h4 class="testimonial-name">— Mike and Family</h4>
+            <span class="testimonial-role">Family Visitors</span>
           </div>
         </div>
       </div>
-      <div class="swiper-button-next testimonials-button-next"></div>
-      <div class="swiper-button-prev testimonials-button-prev"></div>
-      <div class="swiper-pagination testimonials-pagination"></div>
+
+      <!-- Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </section>
 
 <!-- ============= TestimonialSection ends here ======= -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+ <%- include("../partials/_footer.ejs") %>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
    AOS.init();
@@ -394,23 +356,33 @@
   effect: 'slide',  // Smooth slide transition
 });
 
-const testimonialSwiper = new Swiper(".testimonials-swiper", {
-  slidePerView: 1,
+const testimonialSwiper = new Swiper('.testimonial-swiper', {
+  slidesPerView: 1,
   spaceBetween: 20,
+  loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
-    el: ".testimonials-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: ".testimonials-button-next",
-    prevEl: ".testimonials-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  }
 });
-
 
 </script>
 </body>
