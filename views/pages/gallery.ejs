@@ -1,153 +1,118 @@
 <%- include("../partials/_header.ejs") %>
 <!-- Gallery Section -->
 <section id="gallery" class="gallery-section py-5">
-    <div class="container">
-      <!-- Title and Description -->
-      <div class="row text-center mb-5">
-        <div class="col-lg-12" data-aos="fade-up">
-          <h2 class="section-title">Gallery</h2>
-          <p class="section-description">Explore the beauty of our guest house through our gallery.</p>
-        </div>
-      </div>
-  
-      <!-- Filter Buttons -->
-      <div class="row text-center mb-4">
-        <div class="col">
-          <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-outline-primary filter-btn" data-filter="rooms">Rooms</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-outline-primary filter-btn" data-filter="facilities">Facilities</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-outline-primary filter-btn" data-filter="functions">Functions</button>
-        </div>
-      </div>
-  
-      <!-- Gallery Grid -->
-      <div class="row gallery-grid">
-        <!-- Gallery Item 1: Room -->
-        <div class="col-md-3 gallery-item all rooms" data-aos="fade-up">
-          <img src="assets/hero/hero-2.webp" class="img-fluid" alt="Room 1" data-index="0" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <!-- Gallery Item 2: Room -->
-        <div class="col-md-3 gallery-item all rooms" data-aos="fade-up">
-          <img src="assets/hero/hero-2.webp" class="img-fluid" alt="Room 2" data-index="1" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <!-- Gallery Item 3: Facility -->
-        <div class="col-md-3 gallery-item all facilities" data-aos="fade-up">
-          <img src="assets/hero/hero-1.webp" class="img-fluid" alt="Facility 1" data-index="2" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <!-- Gallery Item 4: Function -->
-        <div class="col-md-3 gallery-item all functions" data-aos="fade-up">
-          <img src="assets/hero/hero-3.webp" class="img-fluid" alt="Function 1" data-index="3" data-toggle="modal" data-target="#imageModal">
-        </div>
-        <!-- Add more gallery items here with appropriate categories -->
+  <div class="container">
+    <!-- Title and Description -->
+    <div class="row text-center mb-5">
+      <div class="col-lg-12" data-aos="fade-up">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-description">Explore the beauty of our guest house through our gallery.</p>
       </div>
     </div>
-  </section>
-  
-  <!-- Modal for Full Image View -->
-  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-          <div class="modal-image-container">
-            <img src="" id="modalImage" class="img-fluid" alt="Gallery Image">
-          </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="modal-navigation">
-            <button id="prevBtn" class="btn btn-dark">Prev</button>
-            <button id="nextBtn" class="btn btn-dark">Next</button>
-          </div>
-        </div>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="rooms">Rooms</button>
+      <button class="category-btn" data-category="facilities">Facilities</button>
+      <button class="category-btn" data-category="events">Events</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery-container" id="gallery">
+      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
+        <img src="assets/hero/hero-2.webp" alt="Room 1" class="gallery-image" loading="lazy">
+      </div>
+      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
+        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
+      </div>
+      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
+        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
+      </div>
+      <!-- More images here -->
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <span class="close" id="closeLightbox">&times;</span>
+        <button class="nav-btn prev" id="prevBtn">← Prev</button>
+        <img id="lightbox-image" src="" alt="">
+        <button class="nav-btn next" id="nextBtn">Next →</button>
+        <div id="lightbox-description"></div>
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Cache all the gallery items
-  var galleryItems = document.querySelectorAll(".gallery-item");
-  var filterBtns = document.querySelectorAll(".filter-btn");
-  var modal = document.getElementById("imageModal");
-  var modalImage = document.getElementById("modalImage");
-  var currentIndex = 0; // Variable to track current image in the modal
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init(); 
 
-  // Function to apply filter (Show only relevant items)
-  function filterGallery(category) {
-    var galleryItems = document.querySelectorAll(".gallery-item");
-    galleryItems.forEach(function(item) {
-      var categories = item.classList;
-      if (categories.contains(category) || category === "all") {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  }
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const images = document.querySelectorAll('.image-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxDescription = document.getElementById('lightbox-description');
+    const closeLightbox = document.getElementById('closeLightbox');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-  // Add click event listeners to filter buttons
-  filterBtns.forEach(function(btn) {
-    btn.addEventListener("click", function() {
-      // Remove active class from all buttons and add it to the clicked button
-      filterBtns.forEach(function(button) {
-        button.classList.remove("active");
+    let currentIndex = -1; // Index for modal navigation
+
+    // Filter images based on selected category
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        images.forEach(image => {
+          if (category === 'all' || image.getAttribute('data-category') === category) {
+            image.style.display = 'block';
+            image.classList.add('fadeIn');
+          } else {
+            image.style.display = 'none';
+          }
+        });
+
+        // Highlight the active category button
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
       });
-      btn.classList.add("active");
-
-      // Filter the gallery based on the button clicked
-      var filterCategory = btn.getAttribute("data-filter");
-      filterGallery(filterCategory);
-
-      // Add AOS animations on category change
-      AOS.refresh();
     });
-  });
 
-  // Initialize gallery to show all images by default
-  filterGallery("all");
-
-  // Modal functionality
-  galleryItems.forEach(function(item, index) {
-    var image = item.querySelector("img");
-    image.addEventListener("click", function() {
-      currentIndex = index; // Set the current index of the clicked image
-      modalImage.src = image.src; // Set the source of the image in the modal
-      modal.classList.add("show"); // Show the modal by adding the 'show' class
+    // Show lightbox modal with image and description
+    images.forEach((image, index) => {
+      image.addEventListener('click', () => {
+        const description = image.alt || "No description available";
+        lightboxImage.src = image.querySelector('img').src;
+        lightboxDescription.innerText = description;
+        currentIndex = index; // Set current index for modal navigation
+        lightbox.style.display = 'flex';
+      });
     });
-  });
 
-  // Close modal on clicking the close button
-  var closeModalBtn = modal.querySelector(".close");
-  closeModalBtn.addEventListener("click", function() {
-    modal.classList.remove("show"); // Hide the modal by removing the 'show' class
-  });
+    // Close the lightbox modal
+    closeLightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
 
-  // Prev button to navigate to the previous image
-  var prevBtn = document.getElementById("prevBtn");
-  prevBtn.addEventListener("click", function() {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : galleryItems.length - 1;
-    modalImage.src = galleryItems[currentIndex].querySelector("img").src;
-  });
+    // Modal navigation (Prev/Next)
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      const newImage = images[currentIndex].querySelector('img');
+      lightboxImage.src = newImage.src;
+      lightboxDescription.innerText = newImage.alt;
+    });
 
-  // Next button to navigate to the next image
-  var nextBtn = document.getElementById("nextBtn");
-  nextBtn.addEventListener("click", function() {
-    currentIndex = (currentIndex < galleryItems.length - 1) ? currentIndex + 1 : 0;
-    modalImage.src = galleryItems[currentIndex].querySelector("img").src;
-  });
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      const newImage = images[currentIndex].querySelector('img');
+      lightboxImage.src = newImage.src;
+      lightboxDescription.innerText = newImage.alt;
+    });
 
-  // AOS initialization
-  AOS.init({
-    duration: 1000,
-    once: true
+    // Initialize default view (all images)
+    categoryButtons[0].click();
   });
-});
-
-</script>  
+</script>
