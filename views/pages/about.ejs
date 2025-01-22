@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <%- include("../partials/_header.ejs") %>
-  <title>Document</title>
+  <title>About | Eagle’s Nest Lodge</title>
 </head>
 <body>
   <%- include("../partials/_topbar.ejs") %>
@@ -13,7 +13,7 @@
         <div class="dim-bg-color"></div>
         <div class="row text-center hero-content">
           <div class="col-lg-12">
-            <h2 class="section-title text-white" data-aos="fade-up">About Golden Fields Guest House</h2>
+            <h2 class="section-title text-white" data-aos="fade-up">About Eagle’s Nest Lodge</h2>
             <p class="section-description text-white" data-aos="fade-up" data-aos-delay="200">
               A peaceful escape, nestled in nature, providing a luxurious experience with unmatched hospitality. 
             </p>
@@ -176,7 +176,7 @@
       <!-- Team Member 1 -->
       <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
         <div class="team-member-card text-center">
-          <img src="assets/images/team-member-1.jpg" alt="Team Member 1" class="rounded-circle img-fluid mb-3">
+          <img src="assets/images/profile-placeholder.webp" alt="Team Member 1" height="100" width="100" class="rounded-circle img-fluid mb-3">
           <h4>John Doe</h4>
           <p class="role">General Manager</p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio1" aria-expanded="false" aria-controls="bio1">
@@ -191,7 +191,7 @@
       <!-- Team Member 2 -->
       <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
         <div class="team-member-card text-center">
-          <img src="assets/images/team-member-2.jpg" alt="Team Member 2" class="rounded-circle img-fluid mb-3">
+          <img src="assets/images/profile-placeholder.webp" alt="Team Member 2" class="rounded-circle img-fluid mb-3" height="100" width="100">
           <h4>Jane Smith</h4>
           <p class="role">Head of Housekeeping</p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio2" aria-expanded="false" aria-controls="bio2">
@@ -206,7 +206,7 @@
       <!-- Team Member 3 -->
       <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
         <div class="team-member-card text-center">
-          <img src="assets/images/team-member-3.jpg" alt="Team Member 3" class="rounded-circle img-fluid mb-3">
+          <img src="assets/images/profile-placeholder.webp" alt="Team Member 3" class="rounded-circle img-fluid mb-3" height="100" width="100">
           <h4>Emily Johnson</h4>
           <p class="role">Guest Relations</p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio3" aria-expanded="false" aria-controls="bio3">
@@ -220,6 +220,7 @@
     </div>
   </div>
 </section>
+<%- include("../partials/_footer.ejs") %>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
 AOS.init();
