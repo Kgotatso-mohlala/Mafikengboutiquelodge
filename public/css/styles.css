@@ -246,7 +246,7 @@ html {
 
 /* Facilities Section */
 .facilities-section {
-  background-image: url('../assets/hero/hero-2.webp');
+  background-image: url('../assets/images/hero/hero-2.webp');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -701,7 +701,7 @@ html {
   width: 100%;
   min-height: 100%;
   padding-top: 2rem;
-  background: url("../assets/hero/hero-3.webp");
+  background: url("../assets/images/hero/hero-3.webp");
   background-position: center;
   background-size: cover;
   object-fit: cover;
