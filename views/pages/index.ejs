@@ -11,48 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<!-- Topbar Start -->
-<div class="container-fluid bg-dark px-5 d-none d-lg-block">
-  <div class="row gx-0">
-    <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-      <div class="d-inline-flex align-items-center" style="height: 45px">
-        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Mafikeng, North West, South Africa</small>
-        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>012 345 6789</small>
-        <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@mafikenglodge.co.za</small>
-      </div>
-    </div>
-    <div class="col-lg-4 text-center text-lg-end">
-      <div class="d-inline-flex align-items-center" style="height: 45px">
-        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-tiktok fw-normal"></i></a>
-        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Topbar End -->
-
+  <%- include("../partials/_topbar.ejs") %>
 <!-- Navbar & Hero Start -->
 <header class="container-fluid position-relative p-0">
   <div class="main-menu">
-    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-navbar">
-      <a href="" class="navbar-brand p-0">
-        <h1 class="text-primary m-0">Boutique</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="fa fa-bars"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-          <a href="/" class="nav-item nav-link active">Home</a>
-          <a href="/about" class="nav-item nav-link">About</a>
-          <a href="/gallery" class="nav-item nav-link">Gallery</a>
-          <a href="/contact" class="nav-item nav-link">Contact</a>
-          <a href="/bookings" class="nav-item nav-link">Booking</a>
-        </div>
-      </div>
-    </nav>
+    <%- include("../partials/_navbar.ejs") %>
 
     <!-- Hero Section with Carousel -->
     <div class="hero-carousel">
@@ -332,12 +295,12 @@
 <script>
    AOS.init();
    const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,  // Show 1 slide at a time by default
-  spaceBetween: 15,  // Space between slides
-  loop: true,  // Infinite loop
+  slidesPerView: 1, 
+  spaceBetween: 15,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,  // Enable pagination clickable
+    clickable: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -345,15 +308,15 @@
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,  // Show 3 slides on larger screens
-      spaceBetween: 20,  // Space between slides on larger screens
+      slidesPerView: 3, 
+      spaceBetween: 20,  
     },
     576: {
-      slidesPerView: 2,  // Show 2 slides on medium screens
+      slidesPerView: 2,
       spaceBetween: 10,
     },
   },
-  effect: 'slide',  // Smooth slide transition
+  effect: 'slide',
 });
 
 const testimonialSwiper = new Swiper('.testimonial-swiper', {

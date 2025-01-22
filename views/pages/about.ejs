@@ -1,18 +1,29 @@
-<%- include("../partials/_header.ejs") %>
-
-<!-- About Page -->
-<section id="about-us" class="about-us-section py-5 position-relative">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-12">
-          <h2 class="section-title" data-aos="fade-up">About Golden Fields Guest House</h2>
-          <p class="section-description" data-aos="fade-up" data-aos-delay="200">
-            A peaceful escape, nestled in nature, providing a luxurious experience with unmatched hospitality. 
-          </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("../partials/_header.ejs") %>
+  <title>Document</title>
+</head>
+<body>
+  <%- include("../partials/_topbar.ejs") %>
+  <header class="container-fluid position-relative p-0">
+    <div class="main-menu">
+      <%- include("../partials/_navbar.ejs") %>
+      <div class="container page-hero-header position-relative">
+        <div class="dim-bg-color"></div>
+        <div class="row text-center hero-content">
+          <div class="col-lg-12">
+            <h2 class="section-title text-white" data-aos="fade-up">About Golden Fields Guest House</h2>
+            <p class="section-description text-white" data-aos="fade-up" data-aos-delay="200">
+              A peaceful escape, nestled in nature, providing a luxurious experience with unmatched hospitality. 
+            </p>
+          </div>
         </div>
-      </div>
-  
-      <!-- Why Stay With Us? -->
+    </div>
+  </header>
+    <!-- About Page -->
+<section id="about-us" class="about-us-section px-4 pb-5 position-relative">
+    <div class="container">
       <div class="row mt-5">
         <div class="col-md-6" data-aos="fade-right">
           <h3>Why Stay With Us?</h3>
@@ -80,134 +91,138 @@
         </div>
       </div>
     </div>
-  </section>
-  
-  <section id="facilities-video" class="facilities-video-section py-5 position-relative">
-    <!-- Video Background -->
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video" class="position-absolute w-100 h-100" style="object-fit: cover;">
-            <source src="assets/videos/animatedVideo.webm" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="container position-relative z-index-2">
-        <div class="row text-center">
-            <div class="col-lg-12" data-aos="fade-up">
-                <h2 class="section-title text-white">Explore Our Facilities</h2>
-                <p class="section-description text-white">
-                    Take a virtual tour of our facilities to see the beauty and comfort we offer.
-                </p>
-            </div>
-        </div>
-        
-        <!-- Facility Descriptions -->
-        <div class="row justify-content-center">
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
-                <!-- Toggle 1 -->
-                <div class="accordion" id="facilitiesAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Comfortable Rooms
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#facilitiesAccordion">
-                            <div class="accordion-body">
-                                Our rooms are designed with comfort and style in mind, offering you a peaceful and relaxing atmosphere during your stay.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Toggle 2 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Free Wi-Fi
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#facilitiesAccordion">
-                            <div class="accordion-body">
-                                Stay connected with our free high-speed Wi-Fi available throughout the property. Perfect for business travelers and leisure guests alike.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Toggle 3 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Restaurant & Bar
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#facilitiesAccordion">
-                            <div class="accordion-body">
-                                Enjoy delicious meals and refreshing drinks at our in-house restaurant and bar, offering a variety of local and international dishes.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 </section>
 
- <section id="meet-the-team" class="meet-the-team-section py-5">
-    <div class="container">
-      <div class="row text-center mb-4">
-        <div class="col-lg-12" data-aos="fade-up">
-          <h2 class="section-title">Meet Our Team</h2>
-          <p class="section-description">
-            Our team is dedicated to providing exceptional service and creating a memorable experience for our guests.
-          </p>
+<section id="facilities-video" class="facilities-video-section">
+  <div class="container px-4 position-relative p-5">
+    <div class="video-background">
+      <video autoplay muted loop id="bg-video" class="position-absolute w-100 h-100" style="object-fit: cover;">
+          <source src="assets/videos/animatedVideo.webm" type="video/webm">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+  <div class="container position-relative z-index-2">
+      <div class="row text-center">
+          <div class="col-lg-12" data-aos="fade-up">
+              <h2 class="section-title text-white">Explore Our Facilities</h2>
+              <p class="section-description text-white">
+                  Take a virtual tour of our facilities to see the beauty and comfort we offer.
+              </p>
+          </div>
+      </div>
+      
+      <!-- Facility Descriptions -->
+      <div class="row justify-content-center">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
+              <!-- Toggle 1 -->
+              <div class="accordion" id="facilitiesAccordion">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Comfortable Rooms
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#facilitiesAccordion">
+                          <div class="accordion-body">
+                              Our rooms are designed with comfort and style in mind, offering you a peaceful and relaxing atmosphere during your stay.
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Toggle 2 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Free Wi-Fi
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#facilitiesAccordion">
+                          <div class="accordion-body">
+                              Stay connected with our free high-speed Wi-Fi available throughout the property. Perfect for business travelers and leisure guests alike.
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Toggle 3 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Restaurant & Bar
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#facilitiesAccordion">
+                          <div class="accordion-body">
+                              Enjoy delicious meals and refreshing drinks at our in-house restaurant and bar, offering a variety of local and international dishes.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section id="meet-the-team" class="meet-the-team-section py-5">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <div class="col-lg-12" data-aos="fade-up">
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-description">
+          Our team is dedicated to providing exceptional service and creating a memorable experience for our guests.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+        <div class="team-member-card text-center">
+          <img src="assets/images/team-member-1.jpg" alt="Team Member 1" class="rounded-circle img-fluid mb-3">
+          <h4>John Doe</h4>
+          <p class="role">General Manager</p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio1" aria-expanded="false" aria-controls="bio1">
+            Read Bio
+          </button>
+          <div class="collapse mt-2" id="bio1">
+            <p>John brings over 15 years of hospitality experience and is passionate about guest satisfaction.</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
-          <div class="team-member-card text-center">
-            <img src="assets/images/team-member-1.jpg" alt="Team Member 1" class="rounded-circle img-fluid mb-3">
-            <h4>John Doe</h4>
-            <p class="role">General Manager</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio1" aria-expanded="false" aria-controls="bio1">
-              Read Bio
-            </button>
-            <div class="collapse mt-2" id="bio1">
-              <p>John brings over 15 years of hospitality experience and is passionate about guest satisfaction.</p>
-            </div>
+
+      <!-- Team Member 2 -->
+      <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
+        <div class="team-member-card text-center">
+          <img src="assets/images/team-member-2.jpg" alt="Team Member 2" class="rounded-circle img-fluid mb-3">
+          <h4>Jane Smith</h4>
+          <p class="role">Head of Housekeeping</p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio2" aria-expanded="false" aria-controls="bio2">
+            Read Bio
+          </button>
+          <div class="collapse mt-2" id="bio2">
+            <p>Jane ensures that all our rooms are spotless, maintaining the high standards of cleanliness our guests expect.</p>
           </div>
         </div>
-  
-        <!-- Team Member 2 -->
-        <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
-          <div class="team-member-card text-center">
-            <img src="assets/images/team-member-2.jpg" alt="Team Member 2" class="rounded-circle img-fluid mb-3">
-            <h4>Jane Smith</h4>
-            <p class="role">Head of Housekeeping</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio2" aria-expanded="false" aria-controls="bio2">
-              Read Bio
-            </button>
-            <div class="collapse mt-2" id="bio2">
-              <p>Jane ensures that all our rooms are spotless, maintaining the high standards of cleanliness our guests expect.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Team Member 3 -->
-        <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
-          <div class="team-member-card text-center">
-            <img src="assets/images/team-member-3.jpg" alt="Team Member 3" class="rounded-circle img-fluid mb-3">
-            <h4>Emily Johnson</h4>
-            <p class="role">Guest Relations</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio3" aria-expanded="false" aria-controls="bio3">
-              Read Bio
-            </button>
-            <div class="collapse mt-2" id="bio3">
-              <p>Emily is passionate about creating memorable experiences for guests, ensuring they feel at home throughout their stay.</p>
-            </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
+        <div class="team-member-card text-center">
+          <img src="assets/images/team-member-3.jpg" alt="Team Member 3" class="rounded-circle img-fluid mb-3">
+          <h4>Emily Johnson</h4>
+          <p class="role">Guest Relations</p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio3" aria-expanded="false" aria-controls="bio3">
+            Read Bio
+          </button>
+          <div class="collapse mt-2" id="bio3">
+            <p>Emily is passionate about creating memorable experiences for guests, ensuring they feel at home throughout their stay.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init();
+AOS.init();
 </script>
+</body>
+</html

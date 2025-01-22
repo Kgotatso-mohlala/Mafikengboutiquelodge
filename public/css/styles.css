@@ -57,7 +57,7 @@
     background-position: center;
     background-size: cover;
     opacity: 0;
-    animation: slide 30s infinite; /* Slow down the background image animation */
+    animation: slide 30s infinite;
 }
 
 .hero-item:nth-child(1) {
@@ -697,15 +697,31 @@ html {
 }
 
 /* About Page Styles */
-.about-us-section .section-title {
-  font-size: 2.5rem;
-  color: #333;
+.page-hero-header {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 2rem;
+  background: url("../assets/hero/hero-3.webp");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
 }
 
-.about-us-section .section-description {
-  font-size: 1.1rem;
-  color: #555;
-  margin-top: 20px;
+.dim-bg-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #33333383;
+}
+
+.hero-content {
+
+  font-size: 2.5rem;
+  color: #fff;
+  z-index: 2;
 }
 
 /* Accordion Styles */
@@ -730,7 +746,7 @@ html {
 /* Section with Video Background */
 #facilities-video {
   position: relative;
-  height: 100vh; /* Adjust height as needed */
+  height: 100%; 
 }
 
 .video-background video {
