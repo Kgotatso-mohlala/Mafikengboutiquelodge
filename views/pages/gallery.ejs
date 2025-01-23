@@ -2,7 +2,31 @@
 <html lang="en">
 <head>
   <%- include("../partials/_header.ejs") %>
-  <title>Document</title>
+  <meta name="description" content="Eagle’s Nest Lodge - Explore the beauty of our guest house through our gallery, showcasing outdoor spaces, rooms, and activities.">
+  <meta name="keywords" content="Eagle’s Nest Lodge, Guest House, Mafikeng, Rooms, Outdoor, Activities, Gallery, Luxury, Accommodation, South Africa">
+
+<title>Gallery - Eagle’s Neat Lodge | Mafikeng</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Eagle’s Nest Lodge",
+      "description": "Explore the luxurious rooms and beautiful outdoor areas of Eagle’s Nest Lodge in Mafikeng. Perfect for a relaxing getaway.",
+      "url": "https://www.eaglesnestlodge.com/gallery",
+      "image": "assets/images/gallery-thumbnail.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Mafikeng",
+        "addressRegion": "North West",
+        "postalCode": "2745",
+        "addressCountry": "ZA"
+      },
+      "telephone": "+27 123 456 789"
+    }
+  </script>
+  
 </head>
 <body>
  <%- include("../partials/_topbar.ejs") %>
@@ -13,7 +37,7 @@
       <div class="dim-bg-color"></div>
       <div class="row text-center hero-content">
         <div class="col-lg-12">
-          <h2 class="section-title text-white" data-aos="fade-up">About Golden Fields Guest House</h2>
+          <h2 class="section-title text-white" data-aos="fade-up">Gallery Eagle’s Nest Lodge</h2>
           <p class="section-description text-white" data-aos="fade-up" data-aos-delay="200">
             A peaceful escape, nestled in nature, providing a luxurious experience with unmatched hospitality. 
           </p>
@@ -31,7 +55,7 @@
       </div>
       <div class="container px-4">
         <div class="gallery-section">
-          <h2 class="text-white">NeatBat Gallery</h2>
+          <h2 class="text-white">Eagle’s Neat Lodge Gallery</h2>
           <!-- Category Buttons -->
           <div class="category-buttons">
             <button class="btn btn-primary" data-category="all">All</button>
@@ -57,47 +81,48 @@
       <img src="" alt="Fullscreen Image" id="fullscreenImage" />
       <span class="fullscreen-nav next" id="fullscreenNext">&#10095;</span>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <%- include("../partials/_footer.ejs") %>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    AOS.init(); 
+    AOS.init();
 
     const images = [
         { url: "assets/images/outdoors/outdoor-1.jpg", category: "outdoor" },
         { url: "assets/images/rooms/room-2.webp", category: "rooms" },
         {
-          url: "assets/images/function-3.webp",
+          url: "assets/images/activities/activity-1.jpg",
           category: "activities",
         },
         { url: "assets/images/outdoors/outdoor-2.jpg", category: "outdoor" },
         { url: "assets/images/rooms/room-3.webp", category: "rooms" },
         {
-          url: "assets/images/outdoors/outdoor-activity-2.webp",
+          url: "assets/images/activities/activity-2.jpg",
           category: "activities",
         },
         { url: "assets/images/outdoors/outdoor-3.jpg", category: "outdoor" },
         { url: "assets/images/rooms/room-6.webp", category: "rooms" },
         {
-          url: "assets/images/function-4.webp",
+          url: "assets/images/activities/activity-3.jpg",
           category: "activities",
         },
         { url: "assets/images/outdoors/outdoor-4.jpg", category: "outdoor" },
         { url: "assets/images/rooms/room-1.webp", category: "rooms" },
         {
-          url: "assets/images/function-5.webp",
+          url: "assets/images/activities/activity-4.jpg",
           category: "activities",
-        },
+         },
         { url: "assets/images/outdoors/outdoor-5.jpg", category: "outdoor" },
         { url: "assets/images/rooms/room-5.webp", category: "rooms" },
         {
-          url: "assets/images/function-6.webp",
+          url: "assets/images/activities/activity-5.jpg",
           category: "activities",
         },
         { url: "assets/images/outdoors/outdoor-6.jpg", category: "outdoor" },
         { url: "assets/images/rooms/room-4.webp", category: "rooms" },
         {
-          url: "assets/images/function-7.webp",
+          url: "assets/images/activities/activity-6.jpg",
           category: "activities",
         },
       ];
@@ -124,7 +149,7 @@
         filteredImages.forEach((image, index) => {
           const item = document.createElement("div");
           item.className = "masonry-item";
-          item.innerHTML = `<img src="${image.url}" alt="Image ${index + 1}">`;
+          item.innerHTML = `<img src="${image.url}" alt="Eagle's Neat Lodge gallery image ${index + 1}">`;
           item.addEventListener("click", () =>
             openFullscreen(index, filteredImages)
           );
