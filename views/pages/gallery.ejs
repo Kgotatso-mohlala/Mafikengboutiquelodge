@@ -29,173 +29,155 @@
         <h2 class="section-title">Gallery</h2>
         <p class="section-description">Explore the beauty of our guest house through our gallery.</p>
       </div>
-    </div>
-
-    <!-- Category Navigation -->
-    <div class="category-nav">
-      <button class="category-btn active" data-category="all">All</button>
-      <button class="category-btn" data-category="rooms">Rooms</button>
-      <button class="category-btn" data-category="facilities">Facilities</button>
-      <button class="category-btn" data-category="events">Events</button>
-    </div>
-
-    <!-- Gallery -->
-    <div class="gallery-container" id="gallery">
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-1.webp" alt="Room 1" class="gallery-image" loading="lazy">
+      <div class="container px-4">
+        <div class="gallery-section">
+          <h2 class="text-white">NeatBat Gallery</h2>
+          <!-- Category Buttons -->
+          <div class="category-buttons">
+            <button class="btn btn-primary" data-category="all">All</button>
+            <button class="btn btn-secondary" data-category="outdoor">
+              Outdoor
+            </button>
+            <button class="btn btn-secondary" data-category="rooms">
+              Rooms
+            </button>
+            <button class="btn btn-secondary" data-category="activities">
+              Activities
+            </button>
+          </div>
+          <!-- Masonry Grid -->
+          <div class="masonry-grid" id="masonryGrid"></div>
+        </div>
       </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-2.webp" alt="Room 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-3.webp" alt="Room 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-4.webp" alt="Room 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-5.webp" alt="Room 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-6.webp" alt="Room 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-      <div class="image-item" data-category="rooms" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/images/rooms/room-1.webp" alt="Room 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="facilities" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-1.webp" alt="Facility 1" class="gallery-image" loading="lazy">
-      </div>
-      <div class="image-item" data-category="events" data-aos="fade-up" data-aos-duration="1000">
-        <img src="assets/hero/hero-3.webp" alt="Event 1" class="gallery-image" loading="lazy">
-      </div>
-      
-    </div>
-
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-      <div class="lightbox-content">
-        <span class="close" id="closeLightbox">&times;</span>
-        <button class="nav-btn prev" id="prevBtn">← Prev</button>
-        <img id="lightbox-image" src="" alt="">
-        <button class="nav-btn next" id="nextBtn">Next →</button>
-        <div id="lightbox-description"></div>
-      </div>
-    </div>
-  </div>
 </section>
+    <!-- Fullscreen Viewer -->
+    <div class="fullscreen-viewer" id="fullscreenViewer">
+      <span class="fullscreen-close" id="fullscreenClose">&times;</span>
+      <span class="fullscreen-nav prev" id="fullscreenPrev">&#10094;</span>
+      <img src="" alt="Fullscreen Image" id="fullscreenImage" />
+      <span class="fullscreen-nav next" id="fullscreenNext">&#10095;</span>
+    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     AOS.init(); 
 
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    const images = document.querySelectorAll('.image-item');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
-    const lightboxDescription = document.getElementById('lightbox-description');
-    const closeLightbox = document.getElementById('closeLightbox');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
+    const images = [
+        { url: "assets/images/outdoors/outdoor-1.jpg", category: "outdoor" },
+        { url: "assets/images/rooms/room-2.webp", category: "rooms" },
+        {
+          url: "assets/images/function-3.webp",
+          category: "activities",
+        },
+        { url: "assets/images/outdoors/outdoor-2.jpg", category: "outdoor" },
+        { url: "assets/images/rooms/room-3.webp", category: "rooms" },
+        {
+          url: "assets/images/outdoors/outdoor-activity-2.webp",
+          category: "activities",
+        },
+        { url: "assets/images/outdoors/outdoor-3.jpg", category: "outdoor" },
+        { url: "assets/images/rooms/room-6.webp", category: "rooms" },
+        {
+          url: "assets/images/function-4.webp",
+          category: "activities",
+        },
+        { url: "assets/images/outdoors/outdoor-4.jpg", category: "outdoor" },
+        { url: "assets/images/rooms/room-1.webp", category: "rooms" },
+        {
+          url: "assets/images/function-5.webp",
+          category: "activities",
+        },
+        { url: "assets/images/outdoors/outdoor-5.jpg", category: "outdoor" },
+        { url: "assets/images/rooms/room-5.webp", category: "rooms" },
+        {
+          url: "assets/images/function-6.webp",
+          category: "activities",
+        },
+        { url: "assets/images/outdoors/outdoor-6.jpg", category: "outdoor" },
+        { url: "assets/images/rooms/room-4.webp", category: "rooms" },
+        {
+          url: "assets/images/function-7.webp",
+          category: "activities",
+        },
+      ];
 
-    let currentIndex = -1;
+      const masonryGrid = document.getElementById("masonryGrid");
+      const categoryButtons = document.querySelectorAll(
+        ".category-buttons button"
+      );
+      const fullscreenViewer = document.getElementById("fullscreenViewer");
+      const fullscreenImage = document.getElementById("fullscreenImage");
+      const fullscreenClose = document.getElementById("fullscreenClose");
+      const fullscreenPrev = document.getElementById("fullscreenPrev");
+      const fullscreenNext = document.getElementById("fullscreenNext");
 
-    
-    categoryButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const category = button.getAttribute('data-category');
-        images.forEach(image => {
-          if (category === 'all' || image.getAttribute('data-category') === category) {
-            image.style.display = 'block';
-            image.classList.add('fadeIn');
-          } else {
-            image.style.display = 'none';
-          }
+      let currentCategory = "all";
+      let currentIndex = 0;
+
+      function loadGallery(category) {
+        masonryGrid.innerHTML = "";
+        const filteredImages =
+          category === "all"
+            ? images
+            : images.filter((image) => image.category === category);
+        filteredImages.forEach((image, index) => {
+          const item = document.createElement("div");
+          item.className = "masonry-item";
+          item.innerHTML = `<img src="${image.url}" alt="Image ${index + 1}">`;
+          item.addEventListener("click", () =>
+            openFullscreen(index, filteredImages)
+          );
+          masonryGrid.appendChild(item);
         });
+      }
 
-       
-        categoryButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+      function openFullscreen(index, filteredImages) {
+        currentIndex = index;
+        fullscreenImage.src = filteredImages[currentIndex].url;
+        fullscreenViewer.style.display = "flex";
+      }
+
+      function closeFullscreen() {
+        fullscreenViewer.style.display = "none";
+      }
+
+      function showNextImage() {
+        const filteredImages =
+          currentCategory === "all"
+            ? images
+            : images.filter((image) => image.category === currentCategory);
+        currentIndex = (currentIndex + 1) % filteredImages.length;
+        fullscreenImage.src = filteredImages[currentIndex].url;
+      }
+
+      function showPrevImage() {
+        const filteredImages =
+          currentCategory === "all"
+            ? images
+            : images.filter((image) => image.category === currentCategory);
+        currentIndex =
+          (currentIndex - 1 + filteredImages.length) % filteredImages.length;
+        fullscreenImage.src = filteredImages[currentIndex].url;
+      }
+
+      // Event Listeners
+      categoryButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          currentCategory = button.getAttribute("data-category");
+          loadGallery(currentCategory);
+          categoryButtons.forEach((btn) => btn.classList.remove("btn-primary"));
+          button.classList.add("btn-primary");
+        });
       });
-    });
 
-    
-    images.forEach((image, index) => {
-      image.addEventListener('click', () => {
-        const description = image.alt || "No description available";
-        lightboxImage.src = image.querySelector('img').src;
-        lightboxDescription.innerText = description;
-        currentIndex = index; 
-        lightbox.style.display = 'flex';
-      });
-    });
+      fullscreenClose.addEventListener("click", closeFullscreen);
+      fullscreenPrev.addEventListener("click", showPrevImage);
+      fullscreenNext.addEventListener("click", showNextImage);
 
-    
-    closeLightbox.addEventListener('click', () => {
-      lightbox.style.display = 'none';
-    });
-
-   
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-      const newImage = images[currentIndex].querySelector('img');
-      lightboxImage.src = newImage.src;
-      lightboxDescription.innerText = newImage.alt;
-    });
-
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-      const newImage = images[currentIndex].querySelector('img');
-      lightboxImage.src = newImage.src;
-      lightboxDescription.innerText = newImage.alt;
-    });
-
-    
-    categoryButtons[0].click();
-  });
+      // Initial Load
+      loadGallery("all");
+  })
 </script>
-
 </body>
 </html>

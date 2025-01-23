@@ -2,7 +2,43 @@
 <html lang="en">
 <head>
   <%- include("../partials/_header.ejs") %>
-  <title>About | Eagle’s Nest Lodge</title>
+  <meta name="description" content="Discover Eagle’s Nest Lodge, your peaceful escape nestled in nature. Explore luxurious rooms, scenic views, and exceptional service. Book your stay today!">
+  <title>About Eagle’s Nest Lodge | Luxurious Stay & Scenic Views</title>  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Eagle’s Nest Lodge",
+      "url": "https://www.eaglesnestlodge.com",
+      "logo": "https://www.eaglesnestlodge.com/assets/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/eaglesnestlodge",
+        "https://twitter.com/eaglesnestlodge",
+        "https://www.instagram.com/eaglesnestlodge"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-234-567-8900",
+        "contactType": "Customer Service",
+        "areaServed": "ZA",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Scenic Road",
+        "addressLocality": "Mmabatho",
+        "addressRegion": "Mafikeng",
+        "postalCode": "0001",
+        "addressCountry": "ZA"
+      },
+      "description": "Eagle’s Nest Lodge is a luxurious guest house nestled in nature offering peaceful accommodations with stunning views, ideal for family stays and romantic getaways. Explore our rooms, facilities, and exceptional service.",
+      "sameAs": [
+        "https://www.facebook.com/eaglesnestlodge",
+        "https://twitter.com/eaglesnestlodge"
+      ]
+    }
+    </script>
+    
 </head>
 <body>
   <%- include("../partials/_topbar.ejs") %>
@@ -13,7 +49,7 @@
         <div class="dim-bg-color"></div>
         <div class="row text-center hero-content">
           <div class="col-lg-12">
-            <h2 class="section-title text-white" data-aos="fade-up">About Eagle’s Nest Lodge</h2>
+            <h1 class="section-title text-white" data-aos="fade-up">About Eagle’s Nest Lodge</h1>
             <p class="section-description text-white" data-aos="fade-up" data-aos-delay="200">
               A peaceful escape, nestled in nature, providing a luxurious experience with unmatched hospitality. 
             </p>
@@ -26,7 +62,7 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-6" data-aos="fade-right">
-          <h3>Why Stay With Us?</h3>
+          <h2>Why Stay With Us?</h2>
           <p>
             Golden Fields offers the perfect blend of comfort and convenience, with personalized service, stunning views, and a relaxing environment. Here’s why guests choose us:
           </p>
@@ -71,7 +107,7 @@
         </div>
   
         <div class="col-md-6" data-aos="fade-left">
-          <h3>Room Pricing</h3>
+          <h2>Room Pricing</h2>
           <p>We offer competitive pricing for our various room types. Below are our room rates:</p>
           <ul>
             <li>Standard Room: <strong>$99/night</strong></li>
@@ -176,7 +212,7 @@
       <!-- Team Member 1 -->
       <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
         <div class="team-member-card text-center">
-          <img src="assets/images/profile-placeholder.webp" alt="Team Member 1" height="100" width="100" class="rounded-circle img-fluid mb-3">
+          <img src="assets/images/profile-placeholder.webp" alt="John Doe - General Manager at Eagle’s Nest Lodge"" height="100" width="100" class="rounded-circle img-fluid mb-3">
           <h4>John Doe</h4>
           <p class="role">General Manager</p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio1" aria-expanded="false" aria-controls="bio1">
@@ -191,7 +227,7 @@
       <!-- Team Member 2 -->
       <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
         <div class="team-member-card text-center">
-          <img src="assets/images/profile-placeholder.webp" alt="Team Member 2" class="rounded-circle img-fluid mb-3" height="100" width="100">
+          <img src="assets/images/profile-placeholder.webp" alt="Jane Smith - Head of Housekeeping at Eagle’s Nest Lodge" class="rounded-circle img-fluid mb-3" height="100" width="100">
           <h4>Jane Smith</h4>
           <p class="role">Head of Housekeeping</p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio2" aria-expanded="false" aria-controls="bio2">
@@ -206,7 +242,7 @@
       <!-- Team Member 3 -->
       <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
         <div class="team-member-card text-center">
-          <img src="assets/images/profile-placeholder.webp" alt="Team Member 3" class="rounded-circle img-fluid mb-3" height="100" width="100">
+          <img src="assets/images/profile-placeholder.webp" alt="Emily Johnson - Guest Relations at Eagle’s Nest Lodge" class="rounded-circle img-fluid mb-3" height="100" width="100">
           <h4>Emily Johnson</h4>
           <p class="role">Guest Relations</p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#bio3" aria-expanded="false" aria-controls="bio3">
